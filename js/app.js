@@ -61,3 +61,7 @@ const skillObserver = new IntersectionObserver((entries) => {
 
 const aboutSection = document.getElementById('about');
 if (aboutSection) skillObserver.observe(aboutSection);
+
+// ── Current year
+const year = document.querySelector('.year');
+if (year) year.textContent = new Date().getFullYear();
