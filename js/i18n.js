@@ -74,11 +74,18 @@ const T = {
     client6_name: 'Ústav súdneho inžinierstva v Žiline',
     client6_desc: 'Frontend Angular aplikácia pre potreby Ústavu súdneho inžinierstva Žilinskej univerzity.',
 
+    // Open-source / GitHub projects
+    ref_yt_tracker:  'Electron aplikácia s TamperMonkey rozšírením, ktorá automaticky stiahne YouTube video pri lajknutí. Fronta, metadáta, system tray.',
+    ref_yt_archiver: 'Vlastnoobslužný webový archivár YouTube videí a audia. Dockerizovaný PHP backend s real-time sledovaním sťahovania.',
+    ref_subdelay:    'CLI nástroj na posúvanie načasovania titulkov v súboroch .srt a .ass. Bez externých závislostí, presnosť na milisekundy.',
+    ref_xray:        'Desktopová Windows aplikácia pre analýzu röntgenfluorescenčných dát. UI v C# WPF, výpočtové algoritmy v Pythone. Projekt ukončený.',
+
     // Status labels
-    status_live:    'Živé',
-    status_wip:     'V príprave',
-    status_planned: 'Plánované',
-    link_visit:     'Navštíviť →',
+    status_live:     'Živé',
+    status_wip:      'V príprave',
+    status_planned:  'Plánované',
+    status_archived: 'Archivované',
+    link_visit:      'Navštíviť →',
 
     // Availability
     avail_label:      'Dostupnosť',
@@ -161,7 +168,7 @@ const T = {
     ref_starrail:   'Fan site for Honkai: Star Rail. Planned.',
 
     // Client projects
-    client1_name: 'Trenčianske vodárne a kanalizácie',
+    client1_name: 'Trenčín waterworks and sewerage',
     client1_desc: 'Development of internal and external systems for water management processes. Full-stack solution in ASP.NET and Blazor.',
     client2_name: 'Public Health Authority of the SR',
     client2_desc: 'Frontend development for public health systems in Angular.',
@@ -174,11 +181,18 @@ const T = {
     client6_name: 'Institute of Forensic Engineering Žilina',
     client6_desc: 'Angular frontend application for the Institute of Forensic Engineering at the University of Žilina.',
 
+    // Open-source / GitHub projects
+    ref_yt_tracker:  'Electron app with a TamperMonkey extension that auto-downloads YouTube videos when liked. Download queue, metadata embedding and system tray.',
+    ref_yt_archiver: 'Self-hosted YouTube video and audio archiver. Dockerized PHP backend with a web UI and real-time download progress monitoring.',
+    ref_subdelay:    'CLI utility for shifting subtitle timing in .srt and .ass files. Zero dependencies, millisecond precision.',
+    ref_xray:        'Windows desktop app for X-ray fluorescence spectrometry analysis. WPF/.NET UI with Python computational backend. No longer maintained.',
+
     // Status labels
-    status_live:    'Live',
-    status_wip:     'In progress',
-    status_planned: 'Planned',
-    link_visit:     'Visit →',
+    status_live:     'Live',
+    status_wip:      'In progress',
+    status_planned:  'Planned',
+    status_archived: 'Archived',
+    link_visit:      'Visit →',
 
     // Availability
     avail_label:      'Availability',
