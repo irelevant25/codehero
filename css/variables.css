@@ -1,0 +1,45 @@
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Design tokens ── */
+:root {
+  --primary:        #29B6F6;
+  --primary-hover:  #0288D1;
+  --primary-glow:   rgba(41, 182, 246, 0.18);
+  --primary-subtle: rgba(41, 182, 246, 0.08);
+  --radius:         12px;
+  --radius-sm:      8px;
+  --transition:     0.25s ease;
+}
+
+/* ── Light theme ── */
+[data-theme="light"] {
+  --bg:          #F0F7FF;
+  --bg-surface:  #FFFFFF;
+  --bg-elevated: #E8F4FD;
+  --text:        #0F2A3F;
+  --text-muted:  #5A7A90;
+  --border:      #C8E0F0;
+  --shadow:      0 4px 24px rgba(0, 80, 140, 0.07);
+  --shadow-card: 0 2px 12px rgba(0, 80, 140, 0.06);
+  --tag-bg:      #DCF0FF;
+  --tag-text:    #0070A8;
+}
+
+/* ── Dark theme ── */
+[data-theme="dark"] {
+  --bg:          #07121C;
+  --bg-surface:  #0E1E2C;
+  --bg-elevated: #172838;
+  --text:        #D8EEF8;
+  --text-muted:  #6A9AB8;
+  --border:      #1E3448;
+  --shadow:      0 4px 24px rgba(0, 0, 0, 0.35);
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.25);
+  --tag-bg:      rgba(41, 182, 246, 0.12);
+  --tag-text:    #64C8F0;
+}

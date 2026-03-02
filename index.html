@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="sk" data-theme="auto">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codehero s.r.o. — Webové aplikácie na mieru</title>
+    <meta name="description"
+        content="Tvorba webových aplikácií a systémov na mieru. PHP, Angular, .NET, vlastný CMS." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════════ NAV ═══════════════════ -->
+    <nav>
+        <a class="nav-logo" href="#hero">codehero<span>.sk</span></a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-i18n="nav_about"></a></li>
+            <li><a href="#services" data-i18n="nav_services"></a></li>
+            <li><a href="#references" data-i18n="nav_refs"></a></li>
+            <li><a href="#availability" data-i18n="nav_avail"></a></li>
+            <li><a href="#contact" data-i18n="nav_contact"></a></li>
+        </ul>
+
+        <div class="nav-controls">
+            <button class="icon-btn lang-btn" id="langBtn" title="Switch language"
+                aria-label="Toggle language">EN</button>
+            <button class="icon-btn" id="themeBtn" title="Toggle theme" aria-label="Toggle theme">
+                <svg id="themeIconSun" viewBox="0 0 24 24" style="display:none">
+                    <circle cx="12" cy="12" r="5" />
+                    <line x1="12" y1="1" x2="12" y2="3" />
+                    <line x1="12" y1="21" x2="12" y2="23" />
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                    <line x1="1" y1="12" x2="3" y2="12" />
+                    <line x1="21" y1="12" x2="23" y2="12" />
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                </svg>
+                <svg id="themeIconMoon" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+            </button>
+            <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+                <svg viewBox="0 0 24 24">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ═══════════════════ HERO ═══════════════════ -->
+        <section id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <div class="hero-badge" data-i18n="hero_badge"></div>
+                    <h1>
+                        <span data-i18n="hero_h1a"></span><br>
+                        <span class="accent" data-i18n="hero_h1b"></span>
+                    </h1>
+                    <p class="hero-sub" data-i18n="hero_sub"></p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta1"></a>
+                        <a href="#references" class="btn btn-outline" data-i18n="hero_cta2"></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="hero-card">
+                        <div class="hero-card-header">
+                            <div class="hero-card-dot dot-red"></div>
+                            <div class="hero-card-dot dot-yellow"></div>
+                            <div class="hero-card-dot dot-green"></div>
+                            <div class="line"></div>
+                        </div>
+                        <div class="code-line primary medium"></div>
+                        <div class="code-line short" style="margin-left:20px"></div>
+                        <div class="code-line primary" style="width:75%;margin-left:20px"></div>
+                        <div class="code-line" style="width:55%;margin-left:40px"></div>
+                        <div class="code-line primary" style="width:65%;margin-left:40px"></div>
+                        <div class="code-line short" style="margin-left:20px"></div>
+                        <div class="code-line" style="width:45%"></div>
+                        <div class="code-line primary medium" style="margin-top:16px"></div>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Angular</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">CMS</span>
+                            <span class="tech-tag">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════ ABOUT ═══════════════════ -->
+        <section id="about" class="fade-up">
+            <p class="section-label" data-i18n="about_label"></p>
+            <div class="about-grid">
+                <div>
+                    <h2 data-i18n="about_h2"></h2>
+                    <p class="lead" data-i18n="about_lead"></p>
+                    <p class="text-body" data-i18n="about_body"></p>
+                    <div class="stat-row">
+                        <div class="stat">
+                            <span class="stat-number">6+</span>
+                            <span class="stat-label" data-i18n="stat_angular"></span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label" data-i18n="stat_dotnet"></span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label" data-i18n="stat_projects"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="section-label" data-i18n="skills_label"></p>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Angular / TypeScript</span>
+                                <span class="skill-years" data-i18n="years_6"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:0%" data-target="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">.NET / C# / Blazor</span>
+                                <span class="skill-years" data-i18n="years_2"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:0%" data-target="68%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">PHP</span>
+                                <span class="skill-years" data-i18n="years_exp"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:0%" data-target="75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML / CSS / JS</span>
+                                <span class="skill-years" data-i18n="years_exp"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:0%" data-target="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">SQL / Databases</span>
+                                <span class="skill-years" data-i18n="years_exp"></span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" style="width:0%" data-target="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════ SERVICES ═══════════════════ -->
+        <div id="services">
+            <section class="fade-up">
+                <p class="section-label" data-i18n="services_label"></p>
+                <h2 data-i18n="services_h2"></h2>
+                <p class="lead" data-i18n="services_lead"></p>
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" />
+                                <path d="M3 9h18M9 21V9" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="svc1_title"></h3>
+                        <p data-i18n="svc1_desc"></p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="svc2_title"></h3>
+                        <p data-i18n="svc2_desc"></p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="svc3_title"></h3>
+                        <p data-i18n="svc3_desc"></p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <h3 data-i18n="svc4_title"></h3>
+                        <p data-i18n="svc4_desc"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ═══════════════════ REFERENCES ═══════════════════ -->
+        <section id="references" class="fade-up">
+            <p class="section-label" data-i18n="refs_label"></p>
+            <h2 data-i18n="refs_h2"></h2>
+            <p class="lead" data-i18n="refs_lead"></p>
+
+            <div class="ref-tabs">
+                <button class="ref-tab active" data-tab="client" data-i18n="tab_client"></button>
+                <button class="ref-tab" data-tab="personal" data-i18n="tab_personal"></button>
+            </div>
+
+            <!-- Client projects -->
+            <div class="ref-grid active" id="tab-client">
+                <div class="ref-card">
+                    <div class="ref-card-name">divadielkogaleria.sk</div>
+                    <p class="ref-card-desc" data-i18n="ref_divadielko"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">PHP</span><span class="ref-tag">CMS</span></div>
+                        <span class="ref-status wip" data-i18n="status_wip"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name">audiolux.sk</div>
+                    <p class="ref-card-desc" data-i18n="ref_audiolux"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">PHP</span><span class="ref-tag">CMS</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                    <a href="https://audiolux.sk" target="_blank" rel="noopener" class="ref-link"
+                        data-i18n="link_visit"></a>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client1_name"></div>
+                    <p class="ref-card-desc" data-i18n="client1_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">ASP.NET</span><span
+                                class="ref-tag">Blazor</span><span class="ref-tag">FE + BE</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client2_name"></div>
+                    <p class="ref-card-desc" data-i18n="client2_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span><span class="ref-tag">FE</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client3_name"></div>
+                    <p class="ref-card-desc" data-i18n="client3_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Talend</span><span
+                                class="ref-tag">Integration</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client4_name"></div>
+                    <p class="ref-card-desc" data-i18n="client4_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span><span class="ref-tag">FE</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client5_name"></div>
+                    <p class="ref-card-desc" data-i18n="client5_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span><span class="ref-tag">FE</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name" data-i18n="client6_name"></div>
+                    <p class="ref-card-desc" data-i18n="client6_desc"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span><span class="ref-tag">FE</span></div>
+                        <span class="ref-status live" data-i18n="status_live"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Personal projects -->
+            <div class="ref-grid" id="tab-personal">
+                <div class="ref-card">
+                    <div class="ref-card-name">anotoki.eu</div>
+                    <p class="ref-card-desc" data-i18n="ref_anotoki"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span><span class="ref-tag">.NET</span>
+                        </div>
+                        <span class="ref-status wip" data-i18n="status_wip"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name">genshin.anotoki.eu</div>
+                    <p class="ref-card-desc" data-i18n="ref_genshin"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span></div>
+                        <span class="ref-status wip" data-i18n="status_wip"></span>
+                    </div>
+                    <a href="https://genshin.anotoki.eu" target="_blank" rel="noopener" class="ref-link"
+                        data-i18n="link_visit"></a>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name">japanese.anotoki.eu</div>
+                    <p class="ref-card-desc" data-i18n="ref_japanese"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span></div>
+                        <span class="ref-status planned" data-i18n="status_planned"></span>
+                    </div>
+                </div>
+
+                <div class="ref-card">
+                    <div class="ref-card-name">starrail.anotoki.eu</div>
+                    <p class="ref-card-desc" data-i18n="ref_starrail"></p>
+                    <div class="ref-card-footer">
+                        <div class="ref-tags"><span class="ref-tag">Angular</span></div>
+                        <span class="ref-status planned" data-i18n="status_planned"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <!-- ═══════════════════ AVAILABILITY ═══════════════════ -->
+        <div id="availability">
+            <section class="fade-up">
+                <p class="section-label" data-i18n="avail_label"></p>
+                <h2 data-i18n="avail_h2"></h2>
+                <p class="lead" data-i18n="avail_lead"></p>
+
+                <div class="availability-box">
+                    <div class="avail-icon">⚡</div>
+                    <div class="avail-content">
+                        <h3 data-i18n="avail_box_title"></h3>
+                        <p data-i18n="avail_box_desc"></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- ═══════════════════ CONTACT ═══════════════════ -->
+        <section id="contact" class="fade-up">
+            <p class="section-label" data-i18n="contact_label"></p>
+            <h2 data-i18n="contact_h2"></h2>
+            <p class="lead" data-i18n="contact_lead"></p>
+
+            <div class="contact-grid">
+                <div class="contact-items">
+                    <a href="mailto:support@codehero.sk" class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact_email_label"></div>
+                            <div class="contact-value">support@codehero.sk</div>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact_location_label"></div>
+                            <div class="contact-value" data-i18n="contact_location_value"></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="2" y="7" width="20" height="14" rx="2" />
+                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="contact-label" data-i18n="contact_company_label"></div>
+                            <div class="contact-value">codehero s.r.o.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <h3 data-i18n="contact_cta_title"></h3>
+                    <p data-i18n="contact_cta_desc"></p>
+                    <a href="mailto:support@codehero.sk" class="btn btn-primary" data-i18n="contact_cta_btn"></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ═══════════════════ FOOTER ═══════════════════ -->
+    <footer>
+        <span>© 2025 <a href="#hero">codehero s.r.o.</a></span>
+        <span data-i18n="footer_rights"></span>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
