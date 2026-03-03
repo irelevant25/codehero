@@ -107,7 +107,8 @@ const T = {
     contact_cta_btn:        'Napísať e-mail',
 
     // Footer
-    footer_rights: 'Všetky práva vyhradené.',
+    footer_rights:    'Všetky práva vyhradené.',
+    footer_analytics: 'Táto stránka používa Umami na anonymnú analýzu návštevnosti. Nepoužívajú sa žiadne cookies.',
   },
 
   en: {
@@ -214,7 +215,8 @@ const T = {
     contact_cta_btn:        'Send an email',
 
     // Footer
-    footer_rights: 'All rights reserved.',
+    footer_rights:    'All rights reserved.',
+    footer_analytics: 'This site uses Umami for anonymous analytics. No cookies are used.',
   },
 };
 
