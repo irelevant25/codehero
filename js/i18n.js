@@ -205,7 +205,7 @@ const T = {
     // Contact
     contact_label:          'Let\'s connect',
     contact_h2:             'Contact',
-    contact_lead:           'Have a project? Write to me and we\'ll work it out.',
+    contact_lead:           'Have a project? Write to me and I\'ll work it out.',
     contact_email_label:    'Email',
     contact_location_label: 'Location',
     contact_location_value: 'Slovak Republic',
