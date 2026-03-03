@@ -109,6 +109,24 @@ const T = {
     // Footer
     footer_rights:    'Všetky práva vyhradené.',
     footer_analytics: 'Táto stránka používa Umami na anonymnú analýzu návštevnosti. Nepoužívajú sa žiadne cookies.',
+
+    // Contact form page
+    contact_form_h1:          'Kontaktný formulár',
+    contact_form_desc:        'Opíšte váš projekt a ja sa ozvem čo najskôr.',
+    form_back_btn:            '← Späť',
+    form_name_label:          'Meno a priezvisko',
+    form_name_placeholder:    'Vaše meno',
+    form_email_label:         'E-mail',
+    form_email_placeholder:   'vas@email.sk',
+    form_subject_label:       'Predmet',
+    form_subject_placeholder: 'Predmet správy',
+    form_message_label:       'Správa',
+    form_message_placeholder: 'Opíšte váš projekt...',
+    form_submit:              'Odoslať správu',
+    form_sending:             'Odosielanie...',
+    form_success:             '✓ Správa bola úspešne odoslaná!',
+    form_error_prefix:        '✗ Chyba: ',
+    form_error_generic:       '✗ Chyba pri odosielaní. Skúste to znova.',
   },
 
   en: {
@@ -217,6 +235,24 @@ const T = {
     // Footer
     footer_rights:    'All rights reserved.',
     footer_analytics: 'This site uses Umami for anonymous analytics. No cookies are used.',
+
+    // Contact form page
+    contact_form_h1:          'Contact Form',
+    contact_form_desc:        'Describe your project and I\'ll get back to you as soon as possible.',
+    form_back_btn:            '← Back',
+    form_name_label:          'Full name',
+    form_name_placeholder:    'Your name',
+    form_email_label:         'Email',
+    form_email_placeholder:   'your@email.com',
+    form_subject_label:       'Subject',
+    form_subject_placeholder: 'Message subject',
+    form_message_label:       'Message',
+    form_message_placeholder: 'Describe your project...',
+    form_submit:              'Send message',
+    form_sending:             'Sending...',
+    form_success:             '✓ Message sent successfully!',
+    form_error_prefix:        '✗ Error: ',
+    form_error_generic:       '✗ Error sending message. Please try again.',
   },
 };
 
